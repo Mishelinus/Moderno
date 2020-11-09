@@ -1,0 +1,22 @@
+html{
+
+   box-sizing:border-box;
+}
+*,
+*::before,
+*::after{
+   box-sizing:inherit;
+}
+body{
+   font-size:36px;
+   color: black;
+   background-color: green;
+}
+.block{
+   display:flex;
+   
+}
+
+
+
+
