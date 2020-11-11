@@ -348,6 +348,45 @@ flex-wrap:wrap;
 
 // end section advantages
  
+//start section author
+
+.author{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   background-position:center;
+   background-repeat:no-repeat;
+   background-size:cover;
+   min-height:750px;
+   &__box{
+      background-color: $green;
+      max-width:654px;
+      min-height:215px;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+   }
+   &__title{
+      font-size:30px;
+      max-width:265px;
+      margin-right:36px;
+      line-height:30px;
+      color:#fff;
+      span{
+         @include f700;
+      }
+   }
+}
+.author__link{
+   font-size:18px;
+   padding:23px 43px;
+   background-color:#fff;
+   color:$bg;
+}
+
+
+//end section author
  
 
  
