@@ -73,13 +73,13 @@
   &-title{
      margin-bottom: 10px;
      font-size:48px;
-     font-weight:700;
+     @include f700;
      line-height:72px;
   }
   &-text{
      margin-bottom:50px;
      font-size:20px;
-     font-weight:500;
+     @include f500;
      line-height:30px;
   }
   &-form{
@@ -95,7 +95,7 @@
         box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75); 
         height: 56px;
         border-radius: 4px;
-        font-weight:500;
+        @include f500;
         font-size:14px;
         padding: 0 60px 0  25px;
         &::placeholder{
@@ -165,7 +165,7 @@ flex-wrap:wrap;
       padding:10px 30px;
       align-items:center;
       min-height: 90px;
-      font-weight: 500;
+      @include f500;
       border-bottom: 1px solid #e7ecf2;
    }
       &-name{
@@ -183,7 +183,7 @@ flex-wrap:wrap;
         color: $green;
       }
       &-price{
-         font-weight:700;
+         @include f700;
          font-size:20px;
       }
       &-info{
@@ -210,7 +210,7 @@ flex-wrap:wrap;
          }
          span{
             font-size:14px;
-            font-weight:500;
+            @include f500;
          }
       }
       &-star{
@@ -274,6 +274,79 @@ flex-wrap:wrap;
 
 
 // end SECTION Product Slider ( product-slider )
+
+// section advantages
+
+.advantages{
+   background-color: $bg;
+   padding:110px 0;
+}
+.advantages__title{
+   color:#fff;
+}
+
+.advantages__inner{
+ display:flex;
+ justify-content:space-between;
+}
+.advantages__item{
+   max-width:370px;
+   text-align:center;
+   padding:0px 15px;
+   
+   &:hover{
+      .advantages__item-images{
+         background-color: $green;
+      }
+      .advantages__item-title{
+         color: $green;
+      }
+   }
+   &-images{
+      width:114px;
+      height:114px;
+      background-color:#fff;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:0 auto 30px;
+      transition: all .3s;
+   }
+   &-title{
+      margin-bottom: 25px;
+      font-size:24px;
+      color:#fff;
+      @include f500;
+      transition: all .3s;
+
+   }
+   &-text{
+      font-size:15px;
+   }
+   
+
+}
+.svgicon-1{
+   svg{
+      width:50px;
+   }
+ 
+}
+.svgicon-2{
+   svg{
+      width:70px;
+   }
+   
+}
+.svgicon-3{
+   svg{
+      width:86px;
+   }
+   
+}
+
+// end section advantages
  
  
 
