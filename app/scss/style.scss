@@ -418,15 +418,178 @@ flex-wrap:wrap;
 
    }
 }
+// end section tutorial 
+
+// footer
+.footer{
+background-color: $bg;
+&__inner{
+   display:flex;
+   justify-content:space-between;
+   padding: 100px 0 80px;
+
+}
+}  
+
+.footer__col{
+   max-width:270px;
+   width:100%;
+   &-menu{
+      max-width:220px;
+   }
+   &-title{
+      font-size:22px;
+      padding-bottom:22px;
+      margin-bottom:30px;
+      font-family: 'Raleway', sans-serif;
+      color:#fff;
+      position:relative;
+      &::after{
+         content:'';
+         position:absolute;
+         bottom:0;
+         left:2px;
+         width:51px;
+         background-color: $green;
+         height:3px;
+      }
+   }
+   &-text{
+      color:#b7c3c8;
+      margin-bottom:30px;
+   }
+}
+.footer__info{
+   margin-top:18px;
+   font-size:14px;
+   color:#fff;
+   @include f500;
+   padding-left:30px;
+   position:relative;
+   &::before{
+      content:"\f041";
+      position:absolute;
+      left:0;
+      top:0;
+      font-family:'icomoon';
+      color: $green;
+      font-size:18px;
+   }
+}
+.footer__info-fhone{
+   &::before{
+      content:"\f095";
+     
+   }
+}
+.footer__col-list{
+  a{
+     margin-bottom:13px;
+     color:#b7c3c8;
+     padding-left:22px;
+     position:relative;
+     &::before{
+        content:'\f105';
+        position:absolute;
+        font-size:18px;
+        color: $green;
+        left:0;
+        font-family:'icomoon';
+     }
+  }
+}
+
+.social-link{
+   margin-bottom:38px;
+   a{
+      width:28px;
+      height:28px;
+      background-image:url(../images/css_sprites.png);
+   }
+
+   li{
+      display:inline-block;
+      & + li{
+         margin-left:7px;
+      }
+
+   }
+}
+.facebook{
+   background-position: 0px 0px;
+}
+.twitter{
+   background-position: 56px 0px;
+}
+.youtube{
+   background-position: 0px -28px;
+}
+.pinterest{
+   background-position: 56px -28px;
+}
+.linkedin{
+   background-position: 28px 0px;
+}
+.footer__form-title{
+   margin-bottom:22px;
+   font-size:20px;
+   color:#fff;
+}
+.footer__form{
+   position:relative;
+   input{
+      border:none;
+      background-color:#2f3c43;
+      display:block;
+      width:100%;
+      padding-right:51px;
+      padding-left:17px;
+      height:40px;
+      color:#fff;
+      font-size:14px;
+      &::placeholder{
+         color:#697378;
+      }
+      
+   }
+   button{
+      position:absolute;
+      bottom:0;
+      right:0;
+      background-color:$green;
+      border:none;
+      width:43px;
+      height:40px;
+      cursor:pointer;
+      &::before{
+         content:'\f124';
+         position:absolute;
+         font-family:'icomoon';
+         color:#fff;
+         font-size:20px;
+         top: 9px;
+         right: 14px;
+
+      }
+   }
+}
 
 
+.footer__copy{
+   border-top: 1px solid #424d53;
+   padding-top:22px;
+   padding-bottom:28px;
+}
+.footer__copy-text{
+   text-align:center;
+   color:#919699;
 
+}
+// end footer
 
-
-
-  
-  
  
 
-// end section tutorial 
+ 
+ 
+ 
  
