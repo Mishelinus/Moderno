@@ -75,9 +75,7 @@
       color: #a0a0a0;
       font-size: 14px;
    }
-   & + .header__circle {
-      margin-left: 15px;
-   }
+
    span {
       position: absolute;
       width: 18px;
@@ -105,7 +103,7 @@
       background-color: $tomato;
    }
 }
-.bascket {
+.basket {
    span {
       background-color: $green;
    }
@@ -165,17 +163,106 @@
    }
 }
 
-/* TODO проблемы с user__box при hover*/
-.user__box{
+
+.user__box,
+.basket__box{
    position: relative;
    &:hover{
-      .user__menu{
+      .user__menu
+      {
          height: auto;
          border-width: 1px;
          overflow:auto;
       }
    }
 }
+
+
+.basket__menu{
+   position:absolute;
+   display: none;
+   z-index: 1;
+   top: 13px;
+   right: -10px;
+   padding-top: 49px;
+}
+
+.basket__box{
+   margin-left:15px;
+   &:hover{
+      .basket__menu {
+         display: block;
+      }
+      
+   }
+
+
+}
+
+.basket__items {
+   background-color: #fff;
+   border: 1px solid #e0e0e0; 
+   padding: 23px;
+   display: flex;
+   align-items: center;
+   width: 269px;
+}
+
+.basket__images {
+   margin-right: 15px;
+}
+.basket__info {
+   &-name{
+      @include f700;
+      color: $bg;
+   }
+   &-theme{
+      font-size:12px;
+      color: $green;
+
+   }
+   &-price{
+      @include f700;
+   }
+}
+.basket__summ {
+   background-color: #fff;
+   padding: 16px 16px 12px;
+   border: 1px solid #e0e0e0;
+   border-top:0;
+}
+
+.basket__title{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+   @include f700;
+   font-size:16px;
+   color: $bg;
+   padding-left: 21px;
+   padding-right: 30px;
+  }
+
+  .basket__btn {
+     padding: 12px 5px;
+     @include f700;
+     font-size: 14px;
+     color: #f4f6f5;
+     background-color: $green;
+     text-align: center;
+     width: 100px;
+  }
+
+  .basket__btn-checkout {
+     width: 123px;
+     margin-left: 6px;
+     background-color: $red;
+  }
+
+
+
+
+
 
 .user__menu {
    top:32px;
@@ -217,6 +304,10 @@
 
 
 }
+
+
+
+
 
 
 
