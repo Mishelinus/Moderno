@@ -29,7 +29,8 @@
 .header__btn-login{
    background-color: $green;
 }
-.header__btn-register{
+.header__btn-register,
+.header__btn-logout{
    background-color: $red;
    margin-left:7px;
 }
@@ -56,6 +57,172 @@
    }
 
 }
+.header__circle {
+   &.active {
+      display: block;
+   }
+   display: none;
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   background-color: #f5f5f5;
+   position: relative;
+   &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #a0a0a0;
+      font-size: 14px;
+   }
+   & + .header__circle {
+      margin-left: 15px;
+   }
+   span {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 18px;
+      right: -7px; 
+      top: -7px;
+      font-size: 11px;
+      color: #fff;
+   }
+} 
+.header__box {
+   display: flex;
+   align-items: center;
+}  
+.notification {
+   span {
+      background-color: $yellow;
+   }
+}
+.message {
+   span {
+      background-color: $tomato;
+   }
+}
+.bascket {
+   span {
+      background-color: $green;
+   }
+}
+.header__btn-login--off{
+   display: none;
+}
+.header__btn-logout{
+   display:none;
+   &.header__btn-login--on{
+      display:block;
+   }
+}
+
+
+
+.user{
+   
+   margin-left: 20px;
+   margin-right: 25px;
+   padding-right: 20px;
+   position: relative;
+   &::before {
+      content:"\f107";
+      position:absolute;
+      font-family: 'icomoon';
+      font-size: 16px;
+      color: #707070;
+      top: 0;
+      right: 0;
+
+   }
+   &__inner{
+      display: flex;
+      align-items: center;
+   }
+   &__images {
+      width: 34px;
+      height: 34px;
+      margin-right: 15px;
+      overflow: hidden;
+      border-radius: 50%;  
+   }
+   &__info {
+     font-size: 14px;
+      line-height: 24px;
+     
+   }
+   &__name {
+     @include f500;
+     color: #222;
+     
+   }
+   &__money {
+      color: $green;
+      @include f700;
+   }
+}
+
+/* TODO проблемы с user__box при hover*/
+.user__box{
+   position: relative;
+   &:hover{
+      .user__menu{
+         height: auto;
+         border-width: 1px;
+         overflow:auto;
+      }
+   }
+}
+
+.user__menu {
+   top:32px;
+   left:20px; 
+    border-top: none;
+   position: absolute;
+   padding-top: 37px; 
+   -webkit-transition: all .3s;
+   transition: all .4s;
+   height:0;
+   overflow: hidden;
+   li{
+      background-color: #fff;
+      padding:0px 20px;
+      width: 158px;
+      border-left: 1px solid #d3d3d3;
+      border-right: 1px solid #d3d3d3;
+      
+   }
+   li:first-child{  
+      padding-top: 15px;
+      border-top: 1px solid #d3d3d3;
+      border-left: 1px solid #d3d3d3;
+      border-right: 1px solid #d3d3d3;
+   }
+   li:last-child{
+      border-bottom: 1px solid #d3d3d3;
+      border-left: 1px solid #d3d3d3;
+      border-right: 1px solid #d3d3d3;
+
+   }
+
+   a{
+      font-size: 12px;
+      color: #546e7a;
+      margin-bottom: 15px;
+      @include f500;
+   }
+
+
+}
+
+
+
+
+ 
+
 // end header
 
 //start search
@@ -585,6 +752,7 @@ background-color: $bg;
    color:#919699;
 
 }
+
 // end footer
 
 
