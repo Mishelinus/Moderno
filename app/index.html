@@ -150,7 +150,7 @@
                    </div>
                 </div>
        
-                  <a class="header__btn header__btn-login " href="#">Login</a>
+                  <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
                   <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
                   <a class="header__btn header__btn-register " href="#">Register</a>
                </div>
@@ -971,8 +971,28 @@ Victoria 8007 Australia
          </div>
       </div>
    </footer>
+</div>
+
+
+   <div id="modal">
+      <div class="login__wrapper">
+      <div class="login_title">
+         Login
+      </div>
+      <form action="">
+         <label  class="login__label-name ">
+         <input  type="text" placeholder="Name icon-user" required>
+         </label>
+         <label class="login__label-pass icon-lock">
+            <input  type="text" placeholder="Password" required>
+            </label>
+            <button type="submit">submit</button>
+            <a class="creat-acc icon-edit" href="#">Create An Account?</a>
+            <a class="lost-pass" href="#">Lost password?</a>
+      </form>
    </div>
-  
+   </div>
+   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script> 
  <script src="js/main.js"></script> 

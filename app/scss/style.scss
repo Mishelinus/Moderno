@@ -355,6 +355,130 @@
 }
 // end header
 
+//start modal login
+#modal {
+   background-color: #8bc34a;
+   width: 730px;
+   height: 486px;
+   padding-top: 90px;
+   padding-bottom: 10px;
+   
+}
+.login_title {
+   font-size: 48px;
+   @include f700;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+}
+.login__wrapper {
+   form{
+      max-width: 400px;
+      margin: 0 auto;
+   }
+   label {
+position: relative;
+display: block;
+width: 100%;
+&::before{
+   position: absolute;
+   display: block;
+   font-family: 'icomoon';
+   font-size: 14px;
+   color: #fff;
+   left: 18px;
+   top: 9px;
+}
+   }
+
+   .login__label-name::before {
+content:"\f007";
+   }
+
+   .login__label-pass::before {
+content:"\f023";
+   }
+
+   input {
+      height: 43px;
+      margin-bottom: 8px;
+      border: none;
+      background-color: #76ae36;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 40px;
+      display: block;
+      width: 100%;
+      outline: none;
+      &::placeholder {
+         color: #fff;
+         font-size: 14px;
+      }
+   }
+   button {
+      margin-top: 8px;
+      padding: 18px 0 16px;
+      background-color: #fff;
+      width: 140px;
+      text-transform: uppercase;
+      border: none;
+      margin-right: 10px;
+      @include f700;
+      text-align: center;
+      color: #000;
+      box-shadow: 3px 3px 2px 0px rgba(118,174,54,0.75);
+   }
+}
+.lost-pass {
+   display: block;
+   margin-top: 20px;
+   color: #fff;
+   font-size: 18px;
+
+}
+.creat-acc {
+   margin-top: 19px;
+   padding: 14px 0 20px 28px;
+   text-align: center;
+   width: 245px;
+   background-color: #76ae36;
+   color: #fff;
+   font-size: 18px;
+   position: relative;
+  
+  &::before{
+   content: "\f044";
+     position: absolute;
+     top: 17px;
+     left: 22px;
+     font-family:'icomoon';
+  }
+}
+.fancybox-button svg path{
+   color: #fff;
+   font-weight: 700;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end modal login
+
+
+
 //start search
 .search{
    
