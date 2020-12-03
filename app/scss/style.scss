@@ -2,11 +2,14 @@
 @import '_global';
 @import '_fonts';
 
-
+.header__top {
+   background-color: #fff;
+}
 // start header
 .header__top-inner{
-   padding-top:22px;
-   padding-bottom:17px;
+   //padding-top:22px;
+   //padding-bottom:17px;
+   height: 70px;
    display:flex;
    justify-content:space-between;
    align-items:center;
@@ -104,6 +107,7 @@
    }
 }
 .basket {
+   margin-right: 20px;
    span {
       background-color: $green;
    }
@@ -119,7 +123,7 @@
 }
 
 .user{  
-   margin-left: 20px;
+   
    margin-right: 25px;
    padding-right: 20px;
    position: relative;
@@ -158,6 +162,11 @@
       @include f700;
    }
 }
+.user__box {
+   //height: 100%;
+   margin-top: 39px;
+    height: 90px;
+}
 
 .user__box,
 .basket__box,
@@ -185,6 +194,7 @@
    right: -10px;
    padding-top: 28px;
    transition: all 0.8s;
+   z-index: 1;
 }
 
 .basket__box,
@@ -194,7 +204,7 @@
    &:hover{
       .circle__menu {
          display: block;
-         top:33px;
+         top:24px;
          
       }
       
@@ -298,17 +308,23 @@
  .icons-color::before{
     color: $tomato;
  }
+
+ .header__btn-menu,
+ .menu__btn {
+    display: none;
+ }
   
 .user__menu {
-   top:32px;
+   top:60px;
    left:20px; 
     border-top: none;
    position: absolute;
-   padding-top: 37px; 
+   //padding-top: 37px; 
    -webkit-transition: all .3s;
    transition: all .4s;
    height:0;
    overflow: hidden;
+   z-index: 2;
    li{
       background-color: #fff;
       padding:0px 20px;
@@ -698,7 +714,7 @@ flex-wrap:wrap;
 // end section tutorial 
 
 // footer
-.footer{
+.footer{ 
 background-color: $bg;
 &__inner{
    display:flex;
@@ -776,7 +792,7 @@ background-color: $bg;
   }
 }
 
-.social-link{
+.footer__social-link{
    margin-bottom:38px;
    a{
       width:28px;
@@ -863,6 +879,7 @@ background-color: $bg;
 }
 
 // end footer
+@import '_media';
 
 
 
