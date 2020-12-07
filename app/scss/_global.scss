@@ -15,7 +15,7 @@ body {
 a{
    display:inline-block;
    text-decoration:none;
-   color: $color-text;
+   color: $text;
 }
 ul,
 li{
@@ -28,7 +28,7 @@ body{
    font-weight:400;
    font-size:15px;
    line-height: 24px;
-   color: $color-text;
+   color: $text;
    
 }
 .wrapper {
