@@ -1699,7 +1699,80 @@ background-color: #8bc34a;
 }
 // end product-one 
 
+//  start page-404
+
+.page-404__wrapper{
+   border: 1px solid #dedede;
+   background-color: #fff;
+   margin-bottom: 150px;
+}
+.page-404__head{
+   @include f500;
+   font-size: 24px;
+   color: #444444;
+   padding: 23px 27px;
+   border-bottom: 1px solid #dedede;
+}
+.page-404__inner{
+   background-color: $green;
+   padding-top: 64px;
+   text-align: center;
+   color: #fff;
+}
+.page-404__404{
+    font-size: 300px;
+    font-weight: 800;
+   // padding-left: 253px;
+   font-family: 'Open Sans', sans-serif;
+   color: #fffefe;
+   padding-bottom: 23px;
+   line-height: 300px;
+   margin-left: -152px;
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/page-404.png);
+      background-size: cover;
+      background-position:  center;
+      background-repeat: no-repeat;
+      top: 0;
+      width: 152px;
+      height: 292px;
+      margin-left: 20px;
+   }
+}
+.page-404__title {
+   font-size: 30px;
+   @include f300;
+   margin-bottom: 30px;
+
+}
+.page-404__text {
+   font-size: 18px;
+   @include f300;
+   max-width: 500px;
+   margin: 0 auto;
+   margin-bottom: 52px;
+
+}
+.page-404__link {
+   font-size: 14px;
+   color: #fff;
+   @include f300;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 4px;
+   padding: 14px 42px 14px 30px;
+   margin-bottom: 100px;
+   text-transform: uppercase;
+
+}
+
  
+
+
+
+// end page-404
 
 
 
