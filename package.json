@@ -25,8 +25,9 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "chosen-js": "^1.8.7",
     "ion-rangeslider": "^2.3.1",
-     "jquery-form-styler": "^2.0.2",
+    "jquery-form-styler": "^2.0.2",
     "rangeslider.js": "^2.3.3"
   }
 }

@@ -56,7 +56,24 @@ $(".js-range-slider").ionRangeSlider({
     });
   // end tabs
   // стилизация чекбоксов плагином jquery-form-styler
-  $('input[type="file"], select').styler();
+  // $('input[type="file"], select').styler();
+
+  // стилизация select плагином Chosen v1.8.7
+  $(".my_select_box").chosen({
+    width: "100%",
+  disable_search: false,
+  disable_search_threshold: 5,
+  enable_split_word_search: false,
+  max_selected_options: 10,
+  no_results_text: "Ничего не найдено",
+  placeholder_text_multiple: "Выберите несколько параметров",
+  placeholder_text_single: "Выберите параметр",
+  search_contains: true,
+  display_disabled_options: false,
+  display_selected_options: false,
+  max_shown_results: Infinity
+  });
+  
 
 
 
