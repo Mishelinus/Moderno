@@ -1988,6 +1988,8 @@ flex: 100%;
 .page-box__content{
    padding: 30px 35px 80px;
 }
+
+// select с плагином Chosen
 .settings__line{
    margin-bottom: 21px;
    display: flex;
@@ -2006,63 +2008,56 @@ flex: 100%;
       height: 40px;
       padding: 0px 10px;
    }
-   .jq-selectbox{
-       width: 100%;
+   .my_select_box{
+      width: 93%;
+      max-width: 500px;
+   }
+   .chosen-container-single{
+      width: 93%;
       max-width: 540px;
-      &__trigger{
-         border-left: none;
-      }
-      &__trigger-arrow{
-         
-            border: none;
-            font-size: 15px;
-            line-height: 40px;
-            top: 0;
-            right: 20px;
-         &::before{
-            content: "\f0d7";
-            font-family: 'icomoon';
-            
-           
-            
-         }
-      }
+      
    }
-   .jq-selectbox__select{
-     
-      height: 40px;
-      padding: 0px 18px;
-      background-color: #f9f9f9;
-      border: 1px solid #dedede;
-      outline: none;
-      box-shadow: none;
-      border-radius: 0;
-      text-shadow: none;
-      color: #707070;
-      font-family: 'Roboto-Regular', sans-serif;
-      line-height: 40px;
-      background-image: none;
-      &:hover{
-         background-image:none;
-         outline: none;
-         background-color: #f9f9f9;
-      }
-      &:active{
-         border: none;
-         outline: none;
-      }
+   .chosen-container-single .chosen-single{
+       border-radius: 0;
+       border: 1px solid #dedede;
+       line-height: 40px;
+       box-shadow: none;
+       background-image: none;
+       background-color: #f9f9f9;
+       height: 40px;
+       font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
    }
-   // select{
-   //    width: 100%;
-   //    max-width: 540px;
-   //    outline: none;
-   //    border: 1px solid #dedede;
-   //    background-color: #f9f9f9;
-   //    color: #000; 
-   //    height: 40px;
-   //    padding: 0px 10px;
-   // }
+  
 }
+.chosen-container .chosen-results li.highlighted {
+   background-color: #8bc34a;
+   // background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+    background-image: none;
+   color: #fff;
+ }
+ .chosen-container .chosen-results li{
+   font-family: 'Roboto-Regular', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+ }
+.chosen-container-single .chosen-single div b{
+   display: block;
+   // width: 100%;
+   // height: 100%;
+   width: 0;
+   position: absolute;
+   top: 17px;
+   left: 0;
+height: 0;
+border-style: solid;
+border-width: 5px 4px 0 4px;
+border-color: #1e1f1f transparent transparent transparent;
+}
+
+
+
 //end settings page 
 
 

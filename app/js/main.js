@@ -60,7 +60,7 @@ $(".js-range-slider").ionRangeSlider({
 
   // стилизация select плагином Chosen v1.8.7
   $(".my_select_box").chosen({
-    width: "100%",
+    width: "95%",
   disable_search: false,
   disable_search_threshold: 5,
   enable_split_word_search: false,
