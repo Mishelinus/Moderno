@@ -55,8 +55,15 @@ $(".js-range-slider").ionRangeSlider({
       return false;
     });
   // end tabs
+
+
+  
   // стилизация чекбоксов плагином jquery-form-styler
-  // $('input[type="file"], select').styler();
+   $('input[type="file"]').styler();
+   // отключаем влияние на селекты
+   $('select').styler('destroy'); 
+
+
 
   // стилизация select плагином Chosen v1.8.7
   $(".my_select_box").chosen({

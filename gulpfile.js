@@ -28,8 +28,8 @@ gulp.task('style', function(){
       'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
       'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
       'node_modules/chosen-js/chosen.css',
-      // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
-      // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
+       'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+       'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
    ])
    .pipe(concat('libs.min.css'))
    .pipe(cssmin())
@@ -47,7 +47,7 @@ gulp.task('script', function(){
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
       'node_modules/chosen-js/chosen.jquery.js',
       // 'node_modules/chosen-js/chosen.proto.js',
-      // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+       'node_modules/jquery-form-styler/dist/jquery.formstyler.js'
       
 
    ])
