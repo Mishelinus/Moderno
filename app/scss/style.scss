@@ -1436,15 +1436,19 @@ background-color: #8bc34a;
  }
  .icon-facebook{
     background-color: #6370b6;
+    transition: background-color 0.3s ease-out;
  }
  .icon-twitter{
    background-color: #64b5f6;
+   transition: background-color 0.3s ease-out;
 }
 .icon-linkedin{
    background-color: #4f71ce;
+   transition: background-color 0.3s ease-out;
 }
 .icon-pinterest-p{
    background-color: #d32f2f;
+   transition: background-color 0.3s ease-out;
 }
 
 //start tabs
@@ -2066,7 +2070,254 @@ flex: 100%;
 
 //end settings page 
 
+// start profile page
+.profile__settings{
+   .product-one__tabs.settings__tabs{
+      .tabs span{
+         font-family: 'Roboto', sans-serif !important;
+         font-weight: 500;
+         color: #707070;
+         position: relative;
+         &.active::before{
+            color: $green;
+         }
+         &::before{
+            position: absolute;
+            left: 24px;
+            font-size: 14px;
+            font-family: 'icomoon';
+            color: #d0d0d0;
+         }
+      }
+   }
+}
+.profile__inner{
+   display: flex;
+   margin-bottom: 30px;
+}
+.profile__aside{
+   margin-right: 30px;
+   max-width: 270px;
+   width: 100%;
+}
+.profile__content{
+width: 100%;
+}
 
+.profile-status{
+   font-size: 13px;
+   color: #707070;
+   padding: 6px 9px 5px 30px;
+   border: solid 1px #d6d6d6;
+   position: relative;
+   &::before{
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      top: 13px;
+      left: 11px;
+   }
+}
+.profile-on{
+   &::before{
+      background-color: $green;
+   }
+}
+.profile-off{
+   &::before{
+      background-color: $red;
+   }
+}
+.profile__aside .product-one__social a {
+   width: 40px;
+   height: 40px;
+}
+
+.icon-facebook:hover,
+.icon-twitter:hover,
+.icon-linkedin:hover,
+.icon-pinterest-p:hover{
+background-color: #fff;
+transition: background-color 0.3s ease-out;
+}
+.icon-facebook:hover{
+   border: 2px solid #6370b6;
+   &::before{
+      color: #6370b6;
+   }
+}
+.icon-twitter:hover{
+   border: 2px solid #64b5f6;
+   &::before{
+      color: #64b5f6;
+   }
+}
+.icon-linkedin:hover{
+   border: 2px solid #4f71ce;
+   &::before{
+      color: #4f71ce;
+   }
+}
+.icon-pinterest-p:hover{
+   border: 2px solid #d32f2f;
+   &::before{
+      color: #d32f2f;
+   }
+}
+.profile__aside-btn{
+   max-width: 270px;
+   margin-top: 47px;
+   text-align: center;
+   width: 100%;
+   font-size: 16px;
+     @include f500;
+  .profile__aside-message{
+     display: block;
+     width: 100%;
+     padding: 17px 62px 17px 86px;
+     background-color: #546e7a;
+     border: 2px solid #546e7a;
+     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+     transition: all 0.3s;
+     color: #fff;
+     
+     position: relative;
+     &::before{
+        content: "\f003";
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 18px;
+        top: 17px;
+        left: 63px;
+     }
+     &:hover{
+        background-color: transparent;
+        color: #546e7a;
+        transition: all 0.3s;
+     }
+  }
+  .profile__aside-following{
+   display: block;
+   margin-top: 12px;
+   padding: 17px 62px 17px 86px;
+   background-color: #8bc34a;
+   border: 2px solid #8bc34a;
+   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+   transition: all 0.3s;
+   color: #fff;
+   font-size: 20px;
+   @include f500;
+   &:hover{
+      background-color: transparent;
+      color: #8bc34a;
+      transition: all 0.3s;
+   }
+  }
+
+}
+.profile__banner{
+padding: 20px;
+border: 1px solid #dedede;
+margin-bottom: 30px;
+&-images{
+   background-size: cover;
+   width: 829px;
+   min-height: 332px;
+   background-repeat: no-repeat;
+   background-position: center center;
+
+}
+}
+.profile__items{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid #dedede;
+   text-align: center;
+   .profile__item + .profile__item{
+      border-left: 1px solid #dedede;
+   }
+   .profile__item{
+     width: 33.3%;
+     padding: 20px 5px 17px;
+     background-color: #fff;
+     &-title{
+      font-size: 14px;
+      color: $bg;
+      @include f700;
+   }
+   &-content{
+      font-size: 14px;
+      color: #707070;
+      @include f500; 
+   }
+   }
+}
+.personal-box{
+   background-color: #fff;
+   padding: 35px 40px 25px;
+   border: 1px solid #dedede;
+   &__item{
+      margin-bottom: 30px;
+   }
+   &__title{
+      margin-bottom: 25px;
+      @include f500;
+      color: $bg;
+      font-size: 20px;
+   }
+   &__text{
+      p{
+         color: #707070;
+         
+      }
+   }
+   &__item-head{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+   }
+   &__item-name{
+      @include f500;
+      font-size: 16px;
+      color: $bg;
+      font-style: italic;
+   }
+   &__item-number{
+      @include f700;
+      font-size: 16px;
+      color: $bg;
+   }
+}
+.personal-box__item-line{
+   background-color: #f4f4f4;
+   border-radius: 3px;
+   height: 15px;
+   span{
+      display: block;
+      height: 15px;
+      background-image: url('../images/progress-bar.jpg');
+      background-repeat: repeat;
+      overflow: hidden;
+      // background-size: cover;
+      border-radius: 4px;
+      
+      
+      
+      
+      
+      
+
+      
+
+   }
+}
+
+
+
+
+// end profile page
 
 //start upload file
      .upload__inner{
@@ -2183,7 +2434,7 @@ flex: 100%;
 }
 .jq-file__browse {
    position: absolute;
-   top: 6px;
+   top: 5px;
    right: auto;
    left: 9px;
    padding: 0 12px;
