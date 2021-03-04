@@ -33,7 +33,7 @@ $(".js-range-slider").ionRangeSlider({
     to: 600,
     prefix: "$"
   });
-
+// new-items.html
   $('.icon-th-list').on('click', function(){
     $('.product__item').addClass('list');
     $('.icon-th-list').addClass('active');
